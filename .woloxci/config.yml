@@ -1,10 +1,10 @@
-config:
-  dockerfile: .woloxci/Dockerfile
-  project_name: hello-world
+#config:
+#  dockerfile: .woloxci/Dockerfile
+#  project_name: hello-world
 
-services:
-  - postgres
-  - redis
+#services:
+#  - postgres
+#  - redis
 
 steps:
   preparation:
@@ -16,8 +16,8 @@ steps:
   publish:
     - /opt/apache-maven/bin/mvn deploy
 
-environment:
-  RAILS_ENV: test
-  GIT_COMMITTER_NAME: a
-  GIT_COMMITTER_EMAIL: b
-  LANG: C.UTF-8
+#environment:
+#  RAILS_ENV: test
+#  GIT_COMMITTER_NAME: a
+#  GIT_COMMITTER_EMAIL: b
+#  LANG: C.UTF-8
