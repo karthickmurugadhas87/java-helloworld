@@ -1,5 +1,5 @@
-@Library('wolox-ci') _
+@Library('testing-ci') _
 node {
   checkout scm
-  woloxCi('.woloxci/config.yml');
+  testingCi('.testingci/config.yml');
 }
