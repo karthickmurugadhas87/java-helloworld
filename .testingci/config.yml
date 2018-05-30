@@ -3,7 +3,7 @@ steps:
     - /opt/apache-maven/bin/mvn compile
   testing:
     - /opt/apache-maven/bin/mvn test
-  bundle:
+  packaging:
     - /opt/apache-maven/bin/mvn package
-  publish:
+  publishing:
     - /opt/apache-maven/bin/mvn deploy
