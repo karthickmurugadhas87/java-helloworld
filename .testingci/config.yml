@@ -1,11 +1,3 @@
-config:
-  dockerfile: .woloxci/Dockerfile
-  project_name: some-project-name
-
-services:
-  - postgresql
-  - redis
-
 steps:
   preparation:
     - /opt/apache-maven/bin/mvn compile
@@ -15,9 +7,3 @@ steps:
     - /opt/apache-maven/bin/mvn package
   publish:
     - /opt/apache-maven/bin/mvn deploy
-
-environment:
-  RAILS_ENV: test
-  GIT_COMMITTER_NAME: a
-  GIT_COMMITTER_EMAIL: b
-  LANG: C.UTF-8
