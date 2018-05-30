@@ -1,5 +1,5 @@
 @Library('testing-ci') _
 node {
   checkout scm
-  testingCi('.testingci/config.yml');
+  testingpip('.testingci/config.yml');
 }
