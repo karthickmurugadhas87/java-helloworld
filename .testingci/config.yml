@@ -1,9 +1,0 @@
-steps:
-  preparation:
-    - /opt/apache-maven/bin/mvn compile
-  testing:
-    - /opt/apache-maven/bin/mvn test
-  packaging:
-    - /opt/apache-maven/bin/mvn package
-  publishing:
-    - /opt/apache-maven/bin/mvn deploy
